@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+ 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>r1oN ~works~</title>
+        <meta name="description" content="r1oNの制作物です。過去に制作したゲームなどをまとめています。">
+        <meta property="og:url" content="https://r1oN-official.com/works/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="r1oN ~works~">
+        <meta property="og:description" content="r1oNの制作物です。過去に制作したゲームなどをまとめています。">
+        <meta property="og:image" content="./images/r1oN.png">
+        <meta property="og:locale" content="ja_JP">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- アイコン -->
+        <link rel="icon" href="./images/icons/ShortCutIcon.jpg">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/ShortCutIcon.jpg">
+        <link rel="shortcut icon" href="./images/icons/ShortCutIcon.jpg" type="image/vnd.microsoft.icon">
+
+        <meta property="og:title" content="r1oN ~profile~">
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+        
+        <!-- style.css -->
+        <link rel="stylesheet" href="./css/04_Works/style.css">
+        
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP
+        :wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">   
+    </head>
+    
+
+
+    <main>
+        <div class="box">
+            <div class="side">
+                <sideBar>
+                    <div class = "navigation">
+                        <ul>
+                            <li class = "list">
+                                <a href="./index.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/home.png"width = "40px"alt = ""></span>
+                                    <span class="title">HOME</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./profile.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/profile.png"width = "40px"alt = ""></span>
+                                    <span class="title">PROFILE</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./gallery.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/gallery.png"width = "40px"alt = ""></span>
+                                    <span class="title">GALLERY</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./works.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/works.png"width = "40px"alt = ""></span>                            
+                                    <span class="title">WORKS</span>
+                                </a>                  
+                            </li>               
+                            <li class = "list">
+                                <a href="./contact.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/contact.png"width = "40px"alt = ""></span>
+                                    <span class="title">CONTACT</span>
+                                </a>                  
+                            </li>  
+                           
+                        </ul>
+                    </div>
+                    <script
+                    type="module"
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script
+                    nomodule
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                    <script>
+                    const list = document.querySelectorAll(".list");
+                    console.log(list);
+                    function activeLink() {
+                        list.forEach((item) =>
+                        item.classList.remove("active")
+                        );
+                        this.classList.add("active");
+                    }
+                    list.forEach((item) => {item.addEventListener("click", activeLink);});</script>
+                </sideBar>
+        </div>
+        <div class="main">
+            <body>      
+                <section>
+                    
+                        <div class="title-img">    
+                            <img src = "./images/title/works.png" width = "40%"alt = "">
+                    
+                        </div>  
+                          
+                </section>
+                <section>
+                    <div class = "container">
+                    <div class="game-box flex">
+                        <div class="column-40">    
+                            <video src="./movie/01.mp4" controls poster="./images/thumbnail/hokago.png" width = "80%" alt = ""></video>
+                                  
+                        </div>
+                        <div class="column-55">
+                            <h3 class = "name">放課後ストライカーズ</h3>
+                            <p class = "text">                     
+                            帰路に蔓延るヤンキーたちを
+                            銃で討伐して家までのタイムを競い合う2Dシューティングゲームです。
+                            
+                            </p>
+                            <p class = "text">使用技術・・・DrectX</p>
+                            <p class = "text">使用言語・・・C</p>
+                            <p class = "text">制作期間・・・2023.7/26 ~ 9.27</p>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="game-box flex">
+                        <div class="column-40">    
+                            <video src="./movie/02.mp4" controls poster="./images/thumbnail/json.png" width = "80%" alt = ""></video>
+                        </div>
+                        <div class="column-55">
+                            <h3 class = "name">12日の木曜日</h3>
+                            <p class = "text">                       
+                            流れてくる敵や仲間を斧を投げて攻撃し、
+                            獲得したキャンディの数でスコアを競い合う横スクロール型2Dアクションゲームです。
+                            </p>
+                            <p class = "text">使用技術・・・DirectX</p>
+                            <p class = "text">使用言語・・・C</p>
+                            <p class = "text">制作時間・・・2023.9/29(10時間)</p>
+                            </p>
+                        </div>
+                    </div>
+                        
+                    <div class="game-box flex">
+                        <div class="column-40">    
+                            <video src="./movie/03.mp4" controls poster="./images/thumbnail/tunes.png" width = "80%" alt = ""></video>
+                        </div>
+                        <div class="column-55">
+                            <h3 class = "name">TunesTamer</h3>
+                            <p class = "text">                       
+                            流れてくる敵をテンポよく攻撃してスコアを稼ぎ、
+                            オンラインランキングでスコアを競う2Dアクションリズムゲームです。
+                            </p>
+                            <p class = "text">使用技術・・・Unity・Microsoft Azure</p>
+                            <p class = "text">使用言語・・・C#・PHP</p>
+                            <p class = "text">制作期間・・・2023.11/28 ~ 12.22</p>
+                            </p>
+                        </div>
+                    </div>
+                   
+                    <div class="game-box flex">
+                        <div class="column-40">    
+                            
+                                <video src="./movie/04.mp4" controls poster="./images/thumbnail/InSider.png" width = "80%" alt = ""></video>
+                            
+                        </div>
+                        <div class="column-55">
+                            <h3 class = "name">InSider</h3>
+                            <p class = "text">                       
+                            発掘者の中に紛れ込んだ'内通者'の妨害を掻い潜り、金貨を発掘するオンライン3D人狼ゲームです。
+                            </p>
+                            <p class = "text">使用技術・・・Unity・Microsoft Azure</p>
+                            <p class = "text">使用言語・・・C#・PHP</p>
+                            <p class = "text">制作期間・・・2024.2/5 ~ 3.12</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="game-box flex">
+                        <div class="column-40">    
+                            
+                            <video src="./movie/05.mp4" controls poster="./images/thumbnail/GraTurn.png" width = "80%" alt = ""></video>
+                            
+                        </div>
+                        <div class="column-55">
+                            <h3 class = "name">GravityTurning</h3>
+                            <p class = "text">                       
+                            「GravityTurning」は、ステージ上に設置されたボール同士をぶつけて
+                            ステージクリアを目指す、ソーシャル2Dパズルゲームです。
+                            </p>
+                            <p class = "text">使用技術・・・Unity・Microsoft Azure・Laravel</p>
+                            <p class = "text">使用言語・・・C#・PHP</p>
+                            <p class = "text">制作期間・・・2024.7/25 ~ 9.3</p>
+                            </p>
+                            
+                            <div class = "flex align-items">
+                            <a href="https://apps.apple.com/jp/app/itunes-store/id915061235?itsct=apps_box_badge&amp;itscg=30200"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1464739200&amp;h=b488c8877a1de0c0ee752e2cea473eec" alt="Download on the App Store" style="height:50px;"/></a>
+                            <a href='https://play.google.com/store/apps/details?id=com.yoshidahcc.GravityTurning&hl=en_US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play で手に入れよう' src='https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png' style="height:55px;margin-top:-7px"/></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="game-box flex">
+                        <div class="column-40">    
+                            
+                            <video src="./movie/05.mp4" controls poster="./images/works/GraTurn.png" width = "80%" alt = ""></video>
+                            
+                        </div>
+                        <div class="column-55">
+                            <h3 class = "name">ソダテルッチ</h3>
+                            <p class = "text">                       
+                            「GravityTurning」は、ステージ上に設置されたボール同士をぶつけて
+                            ステージクリアを目指す、ソーシャル2Dパズルゲームです。
+                            </p>
+                            <p class = "text">使用技術・・・Unity・Microsoft Azure・Laravel</p>
+                            <p class = "text">使用言語・・・C#・PHP</p>
+                            <p class = "text">制作期間・・・2024.7/25 ~ 9.3</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+                <body>
+                    
+                </body>
+                
+                <script src="https://unpkg.com/scrollreveal"></script>
+                <script>
+                    //共通のオプション設定
+                    ScrollReveal({
+                        reset: true,
+                        distance: "60px",
+                        duration: 2000, //2sかけてアニメーション
+                        delay: 200 /* 0.2s後に発動 */,
+                    });
+                                     
+                    ScrollReveal().reveal(".title-img", {
+                        delay: 300,
+                        origin: "top",
+                    });    
+                    ScrollReveal().reveal(".game-box", {
+                        delay: 500,
+                        origin: "right",
+                    });                 
+                </script>
+            </body>            
+        </div>
+        </div> 
+        <footer>    
+            <div class = "under_menu">
+                <li class = "list">
+                    <li class="item"><a href="./index.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/home.png"  width = "80%" alt="home"></a></li>
+                    <li class="item"><a href="./profile.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/profile.png"  width = "90%" alt="profile"></a></li>
+                    <li class="item"><a href="./gallery.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/gallery.png"  width = "90%" alt="gallery"></a></li>
+                    <li class="item"><a href="./works.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/works.png"  width = "80%" alt="works"></a></li>
+                    <li class="item"><a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/contact.png"  width = "90%" alt="contact"></a></li>           
+                </li>                
+            </div>  
+            <div class = "snslink">
+                <li class = "snslist">
+                    <li class="item"><a href="https://twitter.com/_r1oN__" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Twitter.png"  width = "60px" alt="Twitter"></a></li>
+                    <li class="item"><a href="https://www.instagram.com/_r1on__/" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Instagram.png"  width = "60px" alt="Instagram"></a></li>
+                    <li class="item"><a href="https://www.pixiv.net/users/84974981" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Pixiv.png"  width = "60px" alt="Pixiv"></a></li> 
+                    <li class="item"><a href="https://github.com/Neko-r1oN" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Git.png"  width = "60px" alt="github"></a></li>          
+                </li>     
+            </div>  
+            <div class = "copyright">©r1oN Inc</div>   
+            <script>
+                //共通のオプション設定
+                ScrollReveal({
+                  reset: true,
+                  distance: "60px",
+                  duration: 2000, //2sかけてアニメーション
+                  delay: 200 /* 0.2s後に発動 */,
+                });
+                ScrollReveal().reveal(".under_menu", {
+                  delay: 50,
+                  origin: "center",
+                });
+                ScrollReveal().reveal(".snslink", {
+                  delay: 100,
+                  origin: "left",
+                });             
+              </script>
+        </footer>    
+    </main>
+</html>

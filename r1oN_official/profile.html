@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>r1oN ~profile~</title>
+        <meta name="description" content="r1oNのプロフィールです。">
+        <meta property="og:url" content="https://r1oN-official.com/profile/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="r1oN ~profile~">
+        <meta property="og:description" content="r1oNのプロフィールです。">
+        <meta property="og:image" content="./images/r1oN.png">
+        <meta property="og:locale" content="ja_JP">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- アイコン -->
+        <link rel="icon" href="./images/icons/ShortCutIcon.jpg">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/ShortCutIcon.jpg">
+        <link rel="shortcut icon" href="./images/icons/ShortCutIcon.jpg" type="image/vnd.microsoft.icon">
+
+        <meta property="og:title" content="r1oN ~profile~">
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+        
+        <!-- style.css -->
+        <link rel="stylesheet" href="./css/02_Profile/style.css">
+        
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP
+        :wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">   
+    </head>
+    
+
+
+    
+    <main>
+        <div class="box">
+            <div class="side">
+                <sideBar>
+                    <div class = "navigation">
+                        <ul>
+                            <li class = "list">
+                                <a href="./index.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/home.png"width = "40px"alt = ""></span>
+                                    <span class="title">HOME</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./profile.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/profile.png"width = "40px"alt = ""></span>
+                                    <span class="title">PROFILE</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./gallery.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/gallery.png"width = "40px"alt = ""></span>
+                                    <span class="title">GALLERY</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./works.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/works.png"width = "40px"alt = ""></span>                            
+                                    <span class="title">WORKS</span>
+                                </a>                  
+                            </li>               
+                            <li class = "list">
+                                <a href="./contact.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/contact.png"width = "40px"alt = ""></span>
+                                    <span class="title">CONTACT</span>
+                                </a>                  
+                            </li>  
+                           
+                        </ul>
+                    </div>
+                    <script
+                    type="module"
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script
+                    nomodule
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                    <script>
+                    const list = document.querySelectorAll(".list");
+                    console.log(list);
+                    function activeLink() {
+                        list.forEach((item) =>
+                        item.classList.remove("active")
+                        );
+                        this.classList.add("active");
+                    }
+                    list.forEach((item) => {item.addEventListener("click", activeLink);});</script>
+                </sideBar>
+        </div>
+   
+        <div class="main">
+            <body>      
+                <section>  
+                    <div class="title-img">    
+                       <img src = "./images/banner/profile.png" width = "40%"alt = "">
+                    </div>                          
+                </section>
+
+                <section class="container">
+                    <div class="profile_inner flex">
+                        <video class="body-img" src="./movie/r1oN.mp4"  playsinline muted="" preload="auto" autoplay="" loop=""></video>
+                       
+                        <div class="column-55">
+                            <dl class = "flex">
+                                <dt>NAME</dt>
+                                <dd>川口  京佑      /   HN : r1oN</dd>
+                                <dt>AGE</dt>
+                                <dd>1 9</dd>
+                                <dt>SCHOOL</dt>
+                                <dd>吉田学園情報ビジネス専門学校</dd>
+                                <dt>HOBBY</dt>
+                                <dd>イラスト・ゲーム・Live2d制作,スポーツ</dd>
+                                <dt>ABOUT</dt>
+                                <dd>サーバーエンジニア志望です。<br>バックサイドからユーザーの"楽しい"を作り出していきたいです。</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="container">
+                    <h1 class = "pop column-60">使用言語・スキル</h1>
+                    <div class="skill_inner">
+                       
+                       
+                            <dl class = "flex">
+                                
+                               
+                                <dt class = "skill_logo"><img src = "./images/icons/Pro_Icon/C.png" width = "50%"alt = ""></dt>
+                                <dd class = "skill_level">C#<br>Unityを中心としたゲームを作成することが出来ます。<br>詳しくは Works をご覧ください。<br><br>使用歴･･･約1年2ヶ月</dd>
+                                <dt class = "skill_logo"><img src = "./images/icons/Pro_Icon/php.png" width = "50%"alt = ""></dt>
+                                <dd class = "skill_level">php<br>データを絡めたwebサイトを作成することが出来ます。<br>ソーシャルゲームのユーザー情報を管理できるサイトを作成しました。<br><br>使用歴･･･約8ヶ月</dd>
+                                <dt class = "skill_logo"><img src = "./images/icons/Pro_Icon/laravel.png" width = "50%"alt = ""></dt>
+                                <dd class = "skill_level">Laravel<br>データを送受信するAPIを作成することが出来ます。<br>クライアントで生成したユーザー情報をサーバーに送受信するAPIを作成しました。<br><br>使用歴･･･約5ヶ月</dd>
+                                <dt class = "skill_logo"><img src = "./images/icons/Pro_Icon/azure.jpeg" width = "50%"alt = ""></dt>
+                                <dd class = "skill_level">microsoft Azure<br>クラウドサーバーの構築・運用の他、<br>負荷に応じたオートスケールセットを行うことが出来ます。<br><br>使用歴･･･約10ヶ月</dd>
+                                <dt class = "skill_logo"><img src = "./images/icons/Pro_Icon/ubuntu.png" width = "50%"alt = ""></dt>
+                                <dd class = "skill_level">ubuntu<br>ディレクトリやファイルの操作を行うことが出来ます。<br>APIの更新やDockerで使用しました。<br><br>使用歴･･･約10ヶ月</dd>
+                                <dt class = "skill_logo"><img src = "./images/icons/Pro_Icon/html.png" width = "50%"alt = ""></dt>
+                                <dd class = "skill_level">HTML<br>webページを作成することが出来ます。<br>ポートフォリオ作成の際にHTMLを使用しました。<br><br>使用歴･･･約3ヶ月</dd>
+                                <dt class = "skill_logo"><img src = "./images/icons/Pro_Icon/java.png" width = "50%"alt = ""></dt>
+                                <dd class = "skill_level">JavaScript<br>動的な要素追加・削除の他、簡易的なアニメーションを付けることが出来ます。<br>こちらのポートフォリオサイトのアニメーションに使用しました。<br><br>使用歴･･･約2ヶ月</dd>
+                            </dl>
+                       
+                    </div>
+                </section>
+
+                <script src="https://unpkg.com/scrollreveal"></script>
+                <script>
+                    //共通のオプション設定
+                    ScrollReveal({
+                        reset: true,
+                        distance: "60px",
+                        duration: 2000, //2sかけてアニメーション
+                        delay: 200 /* 0.2s後に発動 */,
+                    });
+                                     
+                    ScrollReveal().reveal(".title-img", {
+                        delay: 300,
+                        origin: "top",
+                    });    
+                    ScrollReveal().reveal(".body-img", {
+                        delay: 500,
+                        origin: "top",
+                    });    
+                    ScrollReveal().reveal(".column-55", {
+                        delay: 600,
+                        origin: "top",
+                    });    
+                </script>
+            </body>            
+        </div>
+        </div> 
+        <footer>    
+            <div class = "under_menu">
+                <li class = "list">
+                    <li class="item"><a href="./index.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/home.png"  width = "80%" alt="home"></a></li>
+                    <li class="item"><a href="./profile.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/profile.png"  width = "90%" alt="profile"></a></li>
+                    <li class="item"><a href="./gallery.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/gallery.png"  width = "90%" alt="gallery"></a></li>
+                    <li class="item"><a href="./works.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/works.png"  width = "80%" alt="works"></a></li>
+                    <li class="item"><a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/contact.png"  width = "90%" alt="contact"></a></li>           
+                </li>                
+            </div>  
+            <div class = "snslink">
+                <li class = "snslist">
+                    <li class="item"><a href="https://twitter.com/_r1oN__" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Twitter.png"  width = "60px" alt="Twitter"></a></li>
+                    <li class="item"><a href="https://www.instagram.com/_r1on__/" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Instagram.png"  width = "60px" alt="Instagram"></a></li>
+                    <li class="item"><a href="https://www.pixiv.net/users/84974981" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Pixiv.png"  width = "60px" alt="Pixiv"></a></li> 
+                    <li class="item"><a href="https://github.com/Neko-r1oN" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Git.png"  width = "60px" alt="github"></a></li>          
+                </li>     
+            </div>  
+            <div class = "copyright">©r1oN Inc</div>   
+            <script>
+                //共通のオプション設定
+                ScrollReveal({
+                  reset: true,
+                  distance: "60px",
+                  duration: 2000, //2sかけてアニメーション
+                  delay: 200 /* 0.2s後に発動 */,
+                });
+                ScrollReveal().reveal(".under_menu", {
+                  delay: 50,
+                  origin: "center",
+                });
+                ScrollReveal().reveal(".snslink", {
+                  delay: 100,
+                  origin: "left",
+                });             
+              </script>
+        </footer>    
+    </main>
+</html>

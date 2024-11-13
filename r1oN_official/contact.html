@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <style>   
+       
+        div.box {
+            display:flex;
+        } 
+        div.side {
+            height: 200px;
+            width : 10px;
+            position: sticky;
+            top : 0px;
+            z-index: 4;
+        }  
+        div.main {
+            height : 150%;     
+            margin-bottom: 5%;     
+            flex-grow : 1;     
+            
+        }  
+        div.title-img {
+            margin-top : 20px;
+            top : 15%;
+            left : 20%;
+            padding-left:35%;
+            z-index: 1;
+            font-size : 1.2rem;
+        }
+        div.img-list {
+            margin-bottom: 40px;
+            padding-left:10%;            
+        }
+     
+        div.under_menu {
+            width : 70%;
+            height : 100%;              
+            flex-grow : 1;     
+        }  
+       
+        img {
+            border-radius:10px;
+        }
+        .get-in-touch {
+            right :2%;
+        }
+        div.snslink {
+            width : 30%;
+            height : 130px;     
+            margin: auto;
+            margin-bottom: 50px;
+            border-top: solid 2px #199999;
+            border-bottom: solid 2px #199999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow : 1;     
+        }
+        div.copyright {
+            color:#343d5c;
+            height :60px;  
+        }
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>r1oN ~contact~</title>
+        <meta name="description" content="イラストレーターr1oNの問い合わせページです。">
+        <meta property="og:url" content="https://r1oN-official.com/contact/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="r1oN ~contact~">
+        <meta property="og:description" content="イラストレーターr1oNの問い合わせページです。">
+        <meta property="og:image" content="./images/r1oN.png">
+        <meta property="og:locale" content="ja_JP">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- アイコン -->
+        <link rel="icon" href="./images/icons/ShortCutIcon.jpg">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/ShortCutIcon.jpg">
+        <link rel="shortcut icon" href="./images/icons/ShortCutIcon.jpg" type="image/vnd.microsoft.icon">
+
+        <meta property="og:title" content="r1oN ~profile~">
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+        
+        <!-- style.css -->
+        <link rel="stylesheet" href="./css/05_Contact/style.css">
+        
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP
+        :wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">   
+    </head>
+    
+
+
+    <main>
+        <div class="box">
+            <div class="side">
+                <sideBar>
+                    <div class = "navigation">
+                        <ul>
+                            <li class = "list">
+                                <a href="./index.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/home.png"width = "40px"alt = ""></span>
+                                    <span class="title">HOME</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./profile.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/profile.png"width = "40px"alt = ""></span>
+                                    <span class="title">PROFILE</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./gallery.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/gallery.png"width = "40px"alt = ""></span>
+                                    <span class="title">GALLERY</span>
+                                </a>                  
+                            </li>
+                            <li class = "list">
+                                <a href="./works.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/works.png"width = "40px"alt = ""></span>                            
+                                    <span class="title">WORKS</span>
+                                </a>                  
+                            </li>               
+                            <li class = "list">
+                                <a href="./contact.html">
+                                    <span class = "icon"><img src = "./images/icons/side_Icon/contact.png"width = "40px"alt = ""></span>
+                                    <span class="title">CONTACT</span>
+                                </a>                  
+                            </li>  
+                           
+                        </ul>
+                    </div>
+                    <script
+                    type="module"
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script
+                    nomodule
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                    <script>
+                    const list = document.querySelectorAll(".list");
+                    console.log(list);
+                    function activeLink() {
+                        list.forEach((item) =>
+                        item.classList.remove("active")
+                        );
+                        this.classList.add("active");
+                    }
+                    list.forEach((item) => {item.addEventListener("click", activeLink);});</script>
+                </sideBar>
+        </div>
+        <div class="main">
+            <body>      
+                
+                <section>
+                    
+                        <div class="title-img">    
+                            <img src = "./images/title/contact.png" width = "40%"alt = "">
+                    
+                        </div>  
+                          
+                </section>
+                <div class = "container flex mail-form" href="231076@st.yoshida-g.ac.jp">
+                    <li class="mail-item"><a href="mailto:231076@st.yoshida-g.ac.jp" target="_blank" rel="noopener noreferrer"><img src="./images/icons/Mail.png"  width = "60px" alt="mail"></a></li>
+                    
+                    <a class = "column-40" href="mailto:231076@st.yoshida-g.ac.jp">お問い合わせはこちらから</a>
+                </div>
+                
+                
+                
+                <script src="https://unpkg.com/scrollreveal"></script>
+                <script>
+                    //共通のオプション設定
+                    ScrollReveal({
+                        reset: true,
+                        distance: "60px",
+                        duration: 2000, //2sかけてアニメーション
+                        delay: 200 /* 0.2s後に発動 */,
+                    });
+                                     
+                    ScrollReveal().reveal(".title-img", {
+                        delay: 300,
+                        origin: "top",
+                    });    
+                    ScrollReveal().reveal(".form-field", {
+                        delay: 500,
+                        origin: "top",
+                    });    
+                   
+                  
+                </script>
+            </body>            
+        </div>
+        </div> 
+        <footer>    
+            <div class = "under_menu">
+                <li class = "list">
+                    <li class="item"><a href="./index.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/home.png"  width = "80%" alt="home"></a></li>
+                    <li class="item"><a href="./profile.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/profile.png"  width = "90%" alt="profile"></a></li>
+                    <li class="item"><a href="./gallery.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/gallery.png"  width = "90%" alt="gallery"></a></li>
+                    <li class="item"><a href="./works.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/works.png"  width = "80%" alt="works"></a></li>
+                    <li class="item"><a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="./images/banner/contact.png"  width = "90%" alt="contact"></a></li>           
+                </li>                
+            </div>  
+            <div class = "snslink">
+                <li class = "snslist">
+                    <li class="item"><a href="https://twitter.com/_r1oN__" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Twitter.png"  width = "60px" alt="Twitter"></a></li>
+                    <li class="item"><a href="https://www.instagram.com/_r1on__/" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Instagram.png"  width = "60px" alt="Instagram"></a></li>
+                    <li class="item"><a href="https://www.pixiv.net/users/84974981" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Pixiv.png"  width = "60px" alt="Pixiv"></a></li> 
+                    <li class="item"><a href="https://github.com/Neko-r1oN" target="_blank" rel="noopener noreferrer"><img src="./images/icons/sns/Git.png"  width = "60px" alt="github"></a></li>          
+                </li>     
+            </div>  
+            <div class = "copyright">©r1oN Inc</div>   
+            <script>
+                //共通のオプション設定
+                ScrollReveal({
+                  reset: true,
+                  distance: "60px",
+                  duration: 2000, //2sかけてアニメーション
+                  delay: 200 /* 0.2s後に発動 */,
+                });
+                ScrollReveal().reveal(".under_menu", {
+                  delay: 50,
+                  origin: "center",
+                });
+                ScrollReveal().reveal(".snslink", {
+                  delay: 100,
+                  origin: "left",
+                });             
+              </script>
+        </footer>    
+    </main>
+</html>
